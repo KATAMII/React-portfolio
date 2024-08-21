@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header__logo h1 {
+    font-size: 1.7rem;
+    color: black;
+    font-family: 'dancing script',sans-serif;
+  }
+  
+  .header__nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .header__nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+  
+  .header__toggle .toggle-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .header__menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .header__menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  
+  .header__menu-icon .open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .header__menu-icon .open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .header__menu-icon .open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header__nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #ffffff;
+      flex-direction: column;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    .header__nav--open {
+      display: flex;
+    }
+  
+    .header__menu-icon {
+      display: flex;
+    }
+  
+    .header__nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .header__toggle {
+      margin-right: 20px;
+    }
+  }
+  
+ 
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .header {
+    background-color: #1e1e1e;
+    box-shadow: none;
+  }
+  
+  body.dark-mode .header__nav a {
+    color: #ffffff;
+  }
+  body.dark-mode .header__logo h1{
+    color: #ffffff;
+  }
+  
