@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    /* background-color: rgb(230, 225, 225); */
+    width: 100%;
+    padding: 10px;
+    
+}
+.icon svg{
+  color: #490000;
+  width: 2rem;
+  height: 2rem;
+
+}
+.icon{
+    font-size: 1.5rem;
+    color: black;
+}
+body.dark-mode .icon svg{
+    color: white;
+  }
+body.dark-mode .icon {
+    color: white;
+    
+  }
