@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+import Home from './pages/Home/Home'
 function App() {
   
 
   return (
     <>
      <Header/>
+     <Home/>
      <Footer/>
     </>
   )
