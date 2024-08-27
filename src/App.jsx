@@ -5,6 +5,7 @@ import './App.css'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Home from './pages/Home/Home'
+import About from './pages/About/About'
 function App() {
   
 
@@ -12,6 +13,7 @@ function App() {
     <>
      <Header/>
      <Home/>
+     <About/>
      <Footer/>
     </>
   )

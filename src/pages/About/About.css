@@ -1,0 +1,122 @@
+.about {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+body.dark-mode .about-title{
+    color: #fff;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff4081;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #ff4081;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: #555;
+    font-size: 1.2rem;
+}
+.location svg{
+    width: 2rem;
+    height: 2rem;
+}
+.location-icon {
+    color: #ff4081;
+    margin-right: 0.5rem;
+}
+
+/* CV Actions */
+.cv-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.cv-button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #e53570;
+}
+
+.cv-icon {
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .cv-actions {
+        flex-direction: column;
+    }
+
+    .cv-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
